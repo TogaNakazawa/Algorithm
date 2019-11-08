@@ -8,7 +8,6 @@ list1 = copy.deepcopy(list)
 first = max(list1)
 list1.remove(first)
 second = max(list1)
-print("----------------")
 for li in list:
     if li == first:
         print(second)
