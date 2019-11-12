@@ -9,3 +9,4 @@ for i in range(n-2):
         a_integers.append(b_integers[i])
 a_integers.append(b_integers[-1])
 print(sum(a_integers))
+_14
