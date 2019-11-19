@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-w,h,x,y = map(int,input().split())
-
-midpoint = [w/2, h/2]
-=======
 n = list(input())
 gaps = (len(n) - 1) * ["-"]
 for i in range(2 ** len(gaps)):
@@ -16,4 +11,3 @@ for i in range(2 ** len(gaps)):
     if result == 7:
         print(formula + "=7")
         quit()
->>>>>>> c866ee59cdeef7f887f322343b9a96602e668036
