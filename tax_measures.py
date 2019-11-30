@@ -1,6 +1,8 @@
 salaries = range(100, 50000, 50)
 donation_rate = [0.001, 0.005, 0.01, 0.05, 0.1, 0.25]
 import copy
+profit = 0
+
 def tax_and_deduction(salary):
     if salary < 195:
         return 0.05, 0
@@ -16,7 +18,6 @@ def tax_and_deduction(salary):
         return 0.4, 279.6
     return 0.45, 479.6
 
-profit = 0
 for salary in salaries:
     tax, deduction = tax_and_deduction(salary)
     non_donation_outcome = (1-tax)*salary + deduction
